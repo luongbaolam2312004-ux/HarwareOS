@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include "timer.cpp"
+#include "memorymanager.cpp"
 
 //USART1
 #define USART1_BRR    (*(volatile uint32_t*)0x40013808) //Baudrate
