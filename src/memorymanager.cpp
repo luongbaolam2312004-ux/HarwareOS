@@ -19,33 +19,6 @@ typedef byte* byte_ptr;
 //Số slot mỗi page
 #define SLOT_COUNT 32
 
-/*class slot//12 byte, hy sinh 4 byte de toc do doc nhanh hon
-{
-public:
-    byte_ptr handle;//8 byte, truyen du lieu vao day
-    int capacity;//4 byte, kich thuoc slot
-public:
-    slot()
-    {
-        handle = NULL;
-        capacity = 0;
-    }
-    void Load(byte_ptr val)
-    {
-
-    }
-    int* GetSlotIndexPtr() const
-    {
-        //return (int*)(handle - 4);
-        return (int*)(handle - sizeof(int));
-    }
-    int* GetPageIndexPtr() const
-    {
-        //return (int*)(handle - 2*sizeof(int));
-        return GetSlotIndexPtr() - 1;
-    }
-};*/
-
 //Page chia thanh nhieu loai theo kich thuoc
 class Page//16 byte
 {
