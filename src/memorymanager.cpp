@@ -159,5 +159,3 @@ public:
         if (pool128.free(ptr)) return;
     }
 };
-
-MemoryManager mm;//Create MemoryManager protocol
