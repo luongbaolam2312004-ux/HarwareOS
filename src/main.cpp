@@ -8,8 +8,8 @@
 #define USART1_SR     (*(volatile uint32_t*)0x40013800) //Status Register
 #define USART1_DR     (*(volatile uint32_t*)0x40013804) //Data register
 
-#define RCC_APB2ENR   (*(volatile uint32_t*)0x40021018)
-#define GPIOA_CRH     (*(volatile uint32_t*)0x40010804)
+#define RCC_APB2ENR   (*(volatile uint32_t*)0x40021018)//Chân ngắt Clock
+#define GPIOA_CRH     (*(volatile uint32_t*)0x40010804)//GPIOA (PA9) để xuất dữ liệu ra chân vật lí
 
 Timer systime(1000000);
 
